@@ -6,6 +6,7 @@
     <th>Content</th>
     <th>Age</th>
     <th>Published on</th>
+    <th>Author</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= article.content %></td>
     <td><%= article.age %></td>
     <td><%= article.published_on %></td>
+    <td><%= article.author.name if article.author %></td>
     <td><%= link_to 'Show', article %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>

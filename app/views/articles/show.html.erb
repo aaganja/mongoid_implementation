@@ -20,6 +20,11 @@
   <%= @article.published_on %>
 </p>
 
+<p>
+  <b>Author:</b>
+  <%= @article.author.name if @article.author %>
+</p>
+
 <% if @article.comments.size > 0 %>
   <h2>Comments</h2>
   <% for comment in @article.comments %>
